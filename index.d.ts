@@ -1,13 +1,6 @@
-declare namespace envLoader {
-  interface Config {
-    defaults: any
-    [other: string]: any
-  }
-}
-
-declare function envLoader(
-  config: envLoader.Config | string, nodeEnv?: string
-): any
+declare function envLoader<T>(
+  config: { defaults: T } | string, nodeEnv?: string
+): T
 
 export = envLoader
 export as namespace envLoader

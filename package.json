@@ -1,6 +1,6 @@
 {
-  "name": "env-o-loader",
-  "version": "1.0.6",
+  "name": "@b2wads/env-o-loader",
+  "version": "1.0.0",
   "description": "config loader with envvar support",
   "main": "index.js",
   "types": "index.d.ts",
@@ -15,16 +15,15 @@
     "test": "npm run lint && npm run build && mocha --reporter dot"
   },
   "author": {
-    "name": "ℜodrigo ℭacilhας",
-    "email": "<batalema@cacilhas.info>",
-    "url": "http://cacilhas.info/kodumaro"
+    "name": "B2WADS",
+    "email": "<dev@b2wads.com>"
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:cacilhas/env-o-loader.git"
+    "url": "git@bitbucket.org:b2wads/env-o-loader.git"
   },
   "bugs": {
-    "url": "https://github.com/cacilhas/env-o-loader/issues"
+    "url": "https://github.com/b2wads/env-o-loader/issues"
   },
   "license": "BSD-3-Clause",
   "devDependencies": {

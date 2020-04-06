@@ -10,15 +10,20 @@ This is a helper to make easier loading enviroment-oriented settings.
 
 ## Genesis
 
-This code was born inside [B2WAds][b2wads] code base, and it made sense to
+This code was born inside B2WADS code base, and it made sense to
 release this as [open source](./COPYING).
+
+## Install
+```sh
+npm install @b2wads/env-o-loader
+```
 
 ## Use
 
 Simply import the module and call it as a function:
 
 ```javascript
-const loader = require("env-o-loader")
+const loader = require("@b2wads/env-o-loader")
 const settings = loader(require("config/my-app"))
 ```
 

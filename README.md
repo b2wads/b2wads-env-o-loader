@@ -1,4 +1,4 @@
-# Env-o-Loader
+# @b2wads/env-o-loader
 
 [b2wads]: http://www.b2wadvertising.com/
 [iso8601]: https://en.wikipedia.org/wiki/ISO_8601

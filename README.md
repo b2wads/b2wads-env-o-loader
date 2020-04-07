@@ -1,6 +1,6 @@
-# Env-o-Loader
+# @b2wads/env-o-loader
 
-[b2wads]: http://www.b2wadvertising.com/
+[b2wads]: http://www.b2wads.com/
 [iso8601]: https://en.wikipedia.org/wiki/ISO_8601
 [license]: https://opensource.org/licenses/BSD-3-Clause
 [json]: http://json.org/
@@ -42,13 +42,13 @@ Let’s take the following JSON settings file:
 }
 ```
 
-Env-o-Loader will select the environment according to the `NODE_ENV` envvar
+`@b2wads/env-o-loader` will select the environment according to the `NODE_ENV` envvar
 content, defaults to `development`.
 
-- If `NODE_ENV` is `test`, Env-o-Loader returns `"test environment"`;
-- If `NODE_ENV` is `production`, Env-o-Loader returns the content of the
+- If `NODE_ENV` is `test`, `@b2wads/env-o-loader` returns `"test environment"`;
+- If `NODE_ENV` is `production`, `@b2wads/env-o-loader` returns the content of the
   `MY_VAR` envvar;
-- If `NODE_ENV` is something else, Env-o-Loader returns `"some default value"`.
+- If `NODE_ENV` is something else, `@b2wads/env-o-loader` returns `"some default value"`.
 
 You also can supply the environment you want as second parameter:
 
@@ -75,7 +75,7 @@ For example:
 }
 ```
 
-Under development environment, Env-o-Loader returns the following object:
+Under development environment, `@b2wads/env-o-loader` returns the following object:
 
 ```javascript
 { x: 3, y: 4, z: 5 }
@@ -136,7 +136,7 @@ And can be compound with unnested one:
 
 ### Data from envvar
 
-Using the `env:` prefix, Env-o-Loader loads the content from an envvar.
+Using the `env:` prefix, `@b2wads/env-o-loader` loads the content from an envvar.
 
 To load objects from envvar, use querystring format:
 
@@ -159,7 +159,7 @@ env SETTINGS="v[x]=3&v[y]=4"
 
 ### Other types
 
-If you must load settings from JSON or envvar, Env-o-Loader supports more types
+If you must load settings from JSON or envvar, `@b2wads/env-o-loader` supports more types
 than those formats, serialised as string.
 
 - Date: use [ISO 8601][iso8601]: `2010-10-10` for October 10, 2010.
@@ -188,7 +188,7 @@ To force string, you must prefix the value with `raw:`:
 
 ### Loading files
 
-Env-o-Loader can load files by its names. The supported types are [JSON][json]
+`@b2wads/env-o-loader` can load files by its names. The supported types are [JSON][json]
 and [YAML][yaml].
 
 The JSON file string **must** ends with `.json`, and the YAML file string
